@@ -1,6 +1,6 @@
 # Prime Hotel
 
-Project name: "Prime Hotel"
+(p)Project name: "Prime Hotel"(p/)
 Used technologies: HTML, CSS, Flexbox
 Project purpose: This project aims to test the usage of HTML, CSS, and Flexbox technologies by creating a responsive hotel website.
 Project features: The project has a responsive design and is aligned using CSS Flexbox layout. Additionally, the design has a modern and clean look.
