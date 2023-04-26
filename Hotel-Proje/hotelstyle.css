@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&family=Roboto:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* navbar */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--dark);
+  opacity: 0.8;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  padding: 0 3rem;
+}
+
+.navbar a {
+  color: var(--warning);
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid var(--danger);
+  transition: 0.8s;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar .logo {
+  font-weight: 400px;
+}
+
+.navbar .fas {
+  color: #4f200d;
+  font-size: 45px;
+}
+.navbar h1 {
+  font-size: 3rem;
+}
+
+.navbar span {
+  color: var(--warning);
+  font-size: 3.5rem;
+}
+
+/* header  */
+
+.main-header {
+  background-image: url("../Hotel-Proje/img/hotel-iç.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: #fff;
+  position: relative;
+}
+
+.main-header.hotelinfo {
+  background-image: url("../Hotel-Proje/img/hotel-dış.jpg");
+  height: 50vh;
+}
+
+.main-header .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.main-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.main-header * {
+  z-index: 5;
+}
+
+.main-header .content h1 {
+  font-size: 5rem;
+}
+
+.main-header .content p {
+  font-size: 2rem;
+  max-width: 50rem;
+  margin: 2rem 0 3rem;
+}
+
+#content-span {
+  color: var(--warning);
+}
+
+/* flex-items */
+
+.flex-items img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+/* about */
+.about h2 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.about p {
+  margin: 2rem 0;
+}
+
+/* gallery */
+
+.gallery img:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  scale: 1.1;
+  border-radius: 10px;
+  transition: 0.9s;
+}
+.gallery img {
+  transition: 0.9s ease;
+}
+
+.gallery h2 {
+  font-weight: bold;
+}
+
+/* card */
+
+#rooms .card img {
+  border-radius: 20px;
+  transition: 0.9s ease;
+}
+#rooms .card img:hover {
+  scale: 1.2;
+  transition: 0.9;
+}
+
+.card {
+  color: #fff;
+  font-weight: 700;
+}
+
+.card-body {
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.card-body:hover {
+  opacity: 0.9;
+}
+
+#rooms h2 {
+  font-weight: bold;
+}
+
+.card .card-2 {
+  background-color: #4f200d;
+}
+
+/* Teams */
+
+#teams img {
+  object-fit: reverse;
+  border-radius: 45%;
+}
+
+#teams #teams-manager {
+  object-fit: cover;
+}
+
+#teams p {
+  font-weight: bold;
+}
+
+#teams img:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+#teams h2 {
+  padding: 5px;
+  margin-top: 5px;
+}
+
+/* contact */
+#contact .column-2 {
+  background-color: var(--light);
+}
+
+#contact img {
+  border-radius: 0;
+}
+
+#contact img:hover {
+  transform: scale(1);
+}
+
+.contact-form {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form .form-control {
+  margin-bottom: 1.5rem;
+}
+
+.contact-form input {
+  width: 100%;
+  padding: 0.5rem;
+  height: 4rem;
+  border: 1px solid #f5f5f5;
+}
+
+.contact-form .btn {
+  margin-top: 1.5rem;
+}
+
+.contact h2 {
+  font-size: 4rem;
+}
+
+/* article */
+
+.articles {
+  padding: 3rem 5rem;
+}
+
+/* footer  */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  text-align: center;
+}
+
+.footer a {
+  color: var(--info);
+}
+
+.footer a:hover {
+  opacity: 0.7;
+}
+
+.footer .social {
+  margin-right: 1rem;
+}
+
+/* mobile */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 9px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+  .navbar a {
+    padding: 1rem;
+    margin: 0 3px;
+  }
+
+  .teams img {
+    width: 50%;
+  }
+}
